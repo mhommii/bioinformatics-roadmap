@@ -19,25 +19,26 @@ FASTQ → QC → alignment → BAM → variant calling → VCF → annotation �
 | # | Topic | Status |
 |---|---|---|
 | 1 | Git / GitHub | in progress |
-| 2 | Python | starting |
-| 3 | Biopython + sequence analysis | planned |
-| 4 | R + Bioconductor | planned |
-| 5 | Cancer genomics / TCGA | planned |
+| 2 | Python | in progress — used in all three projects |
+| 3 | Biopython + sequence analysis | in progress — NCBI fetching, PAM scanning |
+| 4 | R + Bioconductor | in progress — maftools on TCGA |
+| 5 | Cancer genomics / TCGA | in progress — TCGA-LUAD driver analysis |
 | 6 | Linux / Bash | planned |
-| 7 | FASTQ / BAM / VCF formats | planned |
-| 8 | Nextflow | planned |
-| 9 | CRISPR guide + off-target analysis | planned |
+| 7 | FASTQ / BAM / VCF formats | started — pipeline written |
+| 8 | Nextflow | started — DSL2 pipeline written, not yet run |
+| 9 | CRISPR guide + off-target analysis | in progress — two projects |
 | 10 | ML / AI for computational biology | planned |
 
 ## My projects
 
 | Project | What it covers | Status |
 |---|---|---|
-| `crispr-guide-design` | Fetch a gene, find SpCas9 sites, filter sgRNAs, off-target search | planned |
-| `cancer-crispr-targets` | TCGA mutation data → pick a gene → design and compare guides | planned |
-| `variant-calling-pipeline` | Small Nextflow pipeline: FASTQ → QC → alignment → VCF | planned |
+| [**crispr-guide-design**](https://github.com/mhommii/crispr-guide-design) | TP53: fetch gene, find SpCas9 sites, filter sgRNAs, off-target search across 10.5M sites on chr17 | working, documented |
+| [**cancer-crispr-targets**](https://github.com/mhommii/cancer-crispr-targets) | TCGA-LUAD → correct for gene length → positional clustering → allele-specific guides for the KRAS G12 hotspot | working, documented |
+| [**variant-calling-pipeline**](https://github.com/mhommii/variant-calling-pipeline) | Nextflow: FASTQ → QC → alignment → VCF, with a generated known-answer test set | written, awaiting a WSL restart to run |
 
-Links will be added here once each project has working, documented results.
+Each project keeps its limitations section honest about what was and was not
+checked, and each states that it was built with AI assistance.
 
 ---
 
