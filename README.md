@@ -66,7 +66,7 @@ checked, and each states that it was built with AI assistance.
 | Tool | Source | Cite |
 |---|---|---|
 | FastQC | [s-andrews/FastQC](https://github.com/s-andrews/FastQC) | [Babraham Bioinformatics project page](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) (no paper) |
-| BWA | aligner used in my pipeline | Li & Durbin 2009 [¹³](#ref-13) |
+| BWA | [lh3/bwa](https://github.com/lh3/bwa) | Li & Durbin 2009 [¹³](#ref-13) |
 | samtools / bcftools | [samtools/samtools](https://github.com/samtools/samtools) · [samtools/bcftools](https://github.com/samtools/bcftools) | Danecek et al. 2021 [⁸](#ref-8) |
 | GATK | [broadinstitute/gatk](https://github.com/broadinstitute/gatk) | McKenna et al. 2010 [¹⁴](#ref-14) |
 | MultiQC | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | Ewels et al. 2016 [⁹](#ref-9) |
