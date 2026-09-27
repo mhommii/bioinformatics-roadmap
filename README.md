@@ -24,8 +24,8 @@ FASTQ → QC → alignment → BAM → variant calling → VCF → annotation �
 | 4 | R + Bioconductor | in progress — maftools on TCGA |
 | 5 | Cancer genomics / TCGA | in progress — TCGA-LUAD driver analysis |
 | 6 | Linux / Bash | planned |
-| 7 | FASTQ / BAM / VCF formats | started — pipeline written |
-| 8 | Nextflow | started — DSL2 pipeline written, not yet run |
+| 7 | FASTQ / BAM / VCF formats | in progress — pipeline run on a known-answer test set |
+| 8 | Nextflow | in progress — DSL2 pipeline run end to end (25/25 variants found) |
 | 9 | CRISPR guide + off-target analysis | in progress — two projects |
 | 10 | ML / AI for computational biology | planned |
 
@@ -35,7 +35,7 @@ FASTQ → QC → alignment → BAM → variant calling → VCF → annotation �
 |---|---|---|
 | [**crispr-guide-design**](https://github.com/mhommii/crispr-guide-design) | TP53: fetch gene, find SpCas9 sites, filter sgRNAs, off-target search across 10.5M sites on chr17 | working, documented |
 | [**cancer-crispr-targets**](https://github.com/mhommii/cancer-crispr-targets) | TCGA-LUAD → correct for gene length → positional clustering → allele-specific guides for the KRAS G12 hotspot | working, documented |
-| [**variant-calling-pipeline**](https://github.com/mhommii/variant-calling-pipeline) | Nextflow: FASTQ → QC → alignment → VCF, with a generated known-answer test set | written, awaiting a WSL restart to run |
+| [**variant-calling-pipeline**](https://github.com/mhommii/variant-calling-pipeline) | Nextflow: FASTQ → QC → alignment → VCF, with a generated known-answer test set | working, documented — 25/25 planted variants found, 0 false calls on simulated data |
 
 Each project keeps its limitations section honest about what was and was not
 checked, and each states that it was built with AI assistance.
